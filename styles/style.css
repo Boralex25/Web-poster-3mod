@@ -1,2 +1,304 @@
 @import url('reset.css');
 @import url('font.css');
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(39, 1fr);
+    aspect-ratio: 1 / 2.4375;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+}
+
+.screensaver{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 1;
+    grid-row-end: 8;
+    background-color: #AE1645;
+}
+
+
+title{
+    display: flex;
+    grid-column-start: 10;
+    grid-column-end: 17;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    background-color: #2C3E50;
+}
+
+.egypt-eye{
+    display: flex;
+    grid-column-start: 10;
+    grid-column-end: 17;
+    grid-row-start: 4;
+    grid-row-end: 8;
+    background-color: #FAF8F3;
+}
+
+.eqypt-god{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 13;
+    background-color: #FAF8F3;
+}
+
+.eqypt-table{
+    display: flex;
+    grid-column-start: 4;
+    grid-column-end: 13;
+    grid-row-start: 8;
+    grid-row-end: 13;
+    background-color: #F6B901;
+}
+
+.eqypt-person{
+    display: flex;
+    grid-column-start: 13;
+    grid-column-end: 17;
+    grid-row-start: 8;
+    grid-row-end: 13;
+    background-color: #B8860B;
+}
+
+.first-chess-fig{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 13;
+    grid-row-end: 16;
+    background-color: #AE1645;
+}
+.second-chess-fig{
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 13;
+    grid-row-end: 16;
+    background-color: #FAF8F3;
+}
+
+.third-chess-fig{
+    display: flex;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 13;
+    grid-row-end: 16;
+    background-color: #AE1645;
+}
+
+.fourth-chess-fig{
+    display: flex;
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 13;
+    grid-row-end: 16;
+    background-color: #FAF8F3;
+}
+
+.chess-queen{
+    display: flex;
+    grid-column-start: 9;
+    grid-column-end: 13;
+    grid-row-start: 13;
+    grid-row-end: 19;
+    background-color: #2C3E50;
+}
+
+.first-chessboard{
+    display: flex;
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 13;
+    grid-row-end: 15;
+    background-color: #AE1645;
+}
+
+.second-chessboard{
+    display: flex;
+    grid-column-start: 15;
+    grid-column-end: 17;
+    grid-row-start: 13;
+    grid-row-end: 15;
+    background-color: #FAF8F3;
+}
+
+.third-chessboard{
+    display: flex;
+    grid-column-start: 13;
+    grid-column-end: 15;
+    grid-row-start: 15;
+    grid-row-end: 17;
+    background-color: #FAF8F3;
+}
+
+.fourth-chessboard{
+    display: flex;
+    grid-column-start: 15;
+    grid-column-end: 17;
+    grid-row-start: 15;
+    grid-row-end: 17;
+    background-color: #AE1645;
+}
+
+.chess-sword{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 16;
+    grid-row-end: 19;
+    background-color: #2C3E50;
+}
+
+.chess-fact{
+    display: flex;
+    grid-column-start: 3;
+    grid-column-end: 9;
+    grid-row-start: 16;
+    grid-row-end: 19;
+    background-color: #F6B901;
+}
+
+.chess-slider{
+    display: flex;
+    grid-column-start: 13;
+    grid-column-end: 17;
+    grid-row-start: 17;
+    grid-row-end: 19;
+    background-color: #AE1645;
+}
+
+.dnd-cube{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 19;
+    grid-row-end: 23;
+    background-color: #AE1645;
+}
+
+.dnd-first-fact{
+    display: flex;
+    grid-column-start: 5;
+    grid-column-end: 8;
+    grid-row-start: 19;
+    grid-row-end: 23;
+    background-color: #B8860B;
+}
+
+.dnd-second-fact{
+    display: flex;
+    grid-column-start: 8;
+    grid-column-end: 11;
+    grid-row-start: 19;
+    grid-row-end: 23;
+    background-color: #FAF8F3;
+}
+
+.dnd-third-fact{
+    display: flex;
+    grid-column-start: 11;
+    grid-column-end: 14;
+    grid-row-start: 19;
+    grid-row-end: 23;
+    background-color: #B8860B;
+}
+
+.dnd-fourth-fact{
+    display: flex;
+    grid-column-start: 14;
+    grid-column-end: 17;
+    grid-row-start: 19;
+    grid-row-end: 23;
+    background-color: #FAF8F3;
+}
+
+.who-is-mafia{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 23;
+    grid-row-end: 26;
+    background-color: #F6B901;
+}
+
+.jaws{
+    display: flex;
+    grid-column-start: 10;
+    grid-column-end: 17;
+    grid-row-start: 23;
+    grid-row-end: 30;
+    background-color: #2C3E50;
+}
+
+.first-mafia-card{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 26;
+    grid-row-end: 30;
+    background-color: #2C3E50;
+}
+
+.second-mafia-card{
+    display: flex;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 26;
+    grid-row-end: 30;
+    background-color: #2C3E50;
+}
+
+.third-mafia-card{
+    display: flex;
+    grid-column-start: 7;
+    grid-column-end: 10;
+    grid-row-start: 26;
+    grid-row-end: 30;
+    background-color: #2C3E50;
+}
+
+.monopoly{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 30;
+    grid-row-end: 32;
+    background-color: #AE1645;
+}
+
+.fact-monopoly{
+    display: flex;
+    grid-column-start: 10;
+    grid-column-end: 17;
+    grid-row-start: 30;
+    grid-row-end: 37;
+    background-color: #AE1645;
+}
+
+.monopoly-houses{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 10;
+    grid-row-start: 32;
+    grid-row-end: 37;
+    background-color: #FAF8F3;
+}
+
+footer{
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 17;
+    grid-row-start: 37;
+    grid-row-end: 40;
+    background-color: #B8860B;
+}
