@@ -214,20 +214,41 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     // monopoly fact
     let monopolyFact = document.querySelector(".fact-monopoly")
+    let origMon1 = document.querySelector("[data-monopoly='js-mn1']")
+    let origMon2 = document.querySelector("[data-monopoly='js-mn2']")
+    let origMon3 = document.querySelector("[data-monopoly='js-mn3']")
+    let counter = 0
+    let houses = document.querySelector(".monopoly-houses")
+    let allHouses = {
+        3: 'assets/images/hom2.svg',
+        6: 'assets/images/hom3.svg',
+        10: 'assets/images/hom4.svg',
+        12: 'assets/images/hom5.svg',
+        15: 'assets/images/hom6.svg',
+        18: 'assets/images/hom7.svg',
+        21: 'assets/images/hom8.svg',
+        26: 'assets/images/hom9.svg'}
+
     
 
-    function animMon1(){
-        let imgMon1 = new Image()
-        let mon1 = document.querySelector("[data-monopoly='js-mn1']")
-        document.body.appendChild(mon1)
-        mon1.className = "mon1"
-        mon1.addEventListener("animationend", ()=> mon1.remove())
+    function animMon(orig, anim){
+        let cloneMon = orig.cloneNode(true)
+        cloneMon.style.left = Math.random() * 100 + "%"
+        cloneMon.classList.add(anim)
+        monopolyFact.appendChild(cloneMon)
+        cloneMon.addEventListener("animationend", ()=>{cloneMon.remove()})
     }
 
     monopolyFact.addEventListener("click", ()=>{
         console.log("anim")
-        animMon1()
+        animMon(origMon1, 'mon1')
+        animMon(origMon2, 'mon2')
+        animMon(origMon3, 'mon3')
+        counter++
+        if(allHouses[counter]){houses.style.backgroundImage = `url(${allHouses[counter]})`}
     })
+
+
     
 
 })

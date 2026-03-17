@@ -254,7 +254,7 @@ title{
 }
 
 input[type=range]{
-    -webkit-appearance: none;
+    appearance: none;
     background: none;
     cursor: pointer;
     width: 85%;
@@ -284,7 +284,6 @@ input[type=range]::-webkit-slider-thumb{
     width: 231%;
     left: 18%;
 }
-
 
 .dnd-cube{
     display: flex;
@@ -482,18 +481,37 @@ input[type=range]::-webkit-slider-thumb{
     grid-row-start: 30;
     grid-row-end: 32;
     background-color: #AE1645;
+    background-image: url('../assets/images/monopoly.svg');
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.mon1{
-    z-index: -2;
-    animation: mn1Anim 2s linear;
-}
+
+.mon1{animation: mn1Anim 5s linear;}
 
 @keyframes mn1Anim {
-    0%{top: -15%; rotateX: 0deg;}
-    50%{top: 50%; rotateX: 360deg;}
-    100%{top: 110%; rotateX: 0deg;}
+    0%{top: -15%; transform: rotateX(0deg);}
+    50%{top: 50%; transform: rotateX(360deg);}
+    100%{top: 110%; transform: rotateX(0deg);}
 }
+
+.mon2{animation: mn2Anim 2s linear;}
+
+@keyframes mn2Anim{
+    0%{top: -15%; transform: rotateZ(0deg);}
+    50%{top: 50%; transform: rotateZ(360deg);}
+    100%{top: 110%; transform: rotateZ(0deg);}
+}
+
+.mon3{animation: mn3Anim 3s linear;}
+
+@keyframes mn3Anim{
+    0%{top: -15%; transform: rotateX(0deg);}
+    50%{top: 50%; transform: rotateX(360deg);}
+    100%{top: 110%; transform: rotateX(0deg);}
+}
+
 
 .fact-monopoly{
     display: flex;
@@ -504,6 +522,10 @@ input[type=range]::-webkit-slider-thumb{
     background-color: #AE1645;
     position: relative;
     z-index: 0;
+    background-image: url('../assets/images/monopoly-fact.svg');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center top 80%;
 }
 
 .fact-monopoly img{
@@ -520,6 +542,10 @@ input[type=range]::-webkit-slider-thumb{
     grid-row-start: 32;
     grid-row-end: 37;
     background-color: #FAF8F3;
+    background-image: url('../assets/images/hom1.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 footer{
@@ -530,4 +556,8 @@ footer{
     grid-row-end: 40;
     background-color: #B8860B;
     z-index: 2;
+    background-image: url('../assets/images/footer.svg');
+    background-size: 95%;
+    background-repeat: no-repeat;
+    background-position: center;
 }
