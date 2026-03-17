@@ -14,6 +14,11 @@ body{
     font-family: 'Inter', sans-serif;
 }
 
+body img{
+    -webkit-user-drag: none;
+    user-select: none;
+}
+
 .screensaver{
     display: flex;
     grid-column-start: 1;
