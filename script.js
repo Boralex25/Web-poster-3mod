@@ -75,46 +75,46 @@ document.addEventListener("DOMContentLoaded", ()=>{
     table.addEventListener("click", moveChip)
 
     // chess-figures
-    let fig1 = document.querySelector("[data-js='js-1fig1var']")
-    let fig2 = document.querySelector("[data-js='js-2fig1var']")
-    let fig3 = document.querySelector("[data-js='js-3fig1var']")
-    let fig4 = document.querySelector("[data-js='js-4fig1var']")
+    let fig1 = document.querySelector(".first-chess-fig")
+    let fig2 = document.querySelector(".second-chess-fig")
+    let fig3 = document.querySelector(".third-chess-fig")
+    let fig4 = document.querySelector(".fourth-chess-fig")
 
-    let def1 = fig1.src;
-    let def2 = fig2.src;
-    let def3 = fig3.src;
-    let def4 = fig4.src;
+    let def1 = fig1.style.backgroundImage;
+    let def2 = fig2.style.backgroundImage;
+    let def3 = fig3.style.backgroundImage;
+    let def4 = fig4.style.backgroundImage;
 
     fig1.addEventListener("mouseenter", ()=>{
-        fig1.src = "assets/images/1fig2var.svg"
+        fig1.style.backgroundImage = "url(assets/images/1fig2var.svg)"
         console.log("yes")
     })
     fig1.addEventListener("mouseleave", ()=>{
-        fig1.src = def1
+        fig1.style.backgroundImage = def1
     })
 
     fig2.addEventListener("mouseenter", ()=>{
-        fig2.src = "assets/images/2fig2var.svg"
+        fig2.style.backgroundImage = "url(assets/images/2fig2var.svg)"
         console.log("yes")
     })
     fig2.addEventListener("mouseleave", ()=>{
-        fig2.src = def2
+        fig2.style.backgroundImage = def2
     })
 
     fig3.addEventListener("mouseenter", ()=>{
-        fig3.src = "assets/images/3fig2var.svg"
+        fig3.style.backgroundImage = "url(assets/images/3fig2var.svg)"
         console.log("yes")
     })
     fig3.addEventListener("mouseleave", ()=>{
-        fig3.src = def3
+        fig3.style.backgroundImage = def3
     })
 
     fig4.addEventListener("mouseenter", ()=>{
-        fig4.src = "assets/images/4fig2var.svg"
+        fig4.style.backgroundImage = "url(assets/images/4fig2var.svg)"
         console.log("yes")
     })
     fig4.addEventListener("mouseleave", ()=>{
-        fig4.src = def4
+        fig4.style.backgroundImage = def4
     })
 
     // evo-chess-queen
@@ -184,7 +184,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
     })
     cubeFact4.addEventListener("click", ()=>{
         dndFact4.style.backgroundImage = "url('assets/images/dnd-fact4.svg')"
-        dndFact4.style.backgroundSize = "72%"
+        dndFact4.style.backgroundSize = "84%"
     })
 
 
@@ -204,7 +204,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
     })
     mafia3.addEventListener("click", ()=>{
         mafia3.style.backgroundImage = "url('assets/images/mafia.svg')"
-        mafia3.style.backgroundSize = "60%"
+        // mafia3.style.backgroundSize = mafia3.style.backgroundSize + 10%
+        // console.log(mafia3.style.backgroundSize)
         lowerJaw.id = "lower-jaw"
     })
     lowerJaw.addEventListener("animationend", ()=>{
