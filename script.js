@@ -229,9 +229,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         18: 'assets/images/hom7.svg',
         21: 'assets/images/hom8.svg',
         26: 'assets/images/hom9.svg'}
-
-    
-
     function animMon(orig, anim){
         let cloneMon = orig.cloneNode(true)
         cloneMon.style.left = Math.random() * 100 + "%"
@@ -248,8 +245,4 @@ document.addEventListener("DOMContentLoaded", ()=>{
         counter++
         if(allHouses[counter]){houses.style.backgroundImage = `url(${allHouses[counter]})`}
     })
-
-
-    
-
 })
